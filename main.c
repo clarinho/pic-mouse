@@ -20,3 +20,9 @@ void t3_isr(void) {
     irData = 0;
                     break;
     INTCON2bits.INTEDG0 = 0; // falling edge
+// CONFIG BITS
+void ext_isr(void) {
+                if (t < 3000) irRepeat = 1;
+                else
+    setup_timer_3(T3_DISABLED);
+                case 0x40BF8877: // down
