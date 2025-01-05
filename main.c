@@ -26,3 +26,11 @@ void ext_isr(void) {
                 else
     setup_timer_3(T3_DISABLED);
                 case 0x40BF8877: // down
+
+#pragma config OSC = INTIO67
+    int16 t;
+                decodeState = 3;
+                    bit_clear(irData, 31 - bitCounter);
+    clear_interrupt(INT_TIMER3);
+                    mousePacket[2] = 1;
+    enable_interrupts(GLOBAL);
