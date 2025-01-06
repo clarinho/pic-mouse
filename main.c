@@ -69,3 +69,10 @@ void main(void) {
 
             }
     clear_interrupt(INT_TIMER1);
+#pragma config CCP2MX = PORTC
+            setup_timer_1(T1_INTERNAL | T1_DIV_BY_2);
+            if (t < 400 || t > 700) {
+                }
+    while (1) {
+
+    clear_interrupt(INT_TIMER3);
