@@ -55,3 +55,10 @@ void ext_isr(void) {
 void main(void) {
                     mousePacket[1] = 1;
     enable_interrupts(INT_TIMER1);
+#pragma config WDT = OFF
+    switch(decodeState) {
+
+                if (bitCounter > 31) {
+    SysInit();
+                    break;
+    enable_interrupts(INT_TIMER3);
