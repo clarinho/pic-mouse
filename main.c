@@ -34,3 +34,10 @@ void ext_isr(void) {
     clear_interrupt(INT_TIMER3);
                     mousePacket[2] = 1;
     enable_interrupts(GLOBAL);
+#pragma config STVREN = OFF
+    if (decodeState != 0)
+                ext_int_edge(L_TO_H);
+
+}
+                    break;
+    enable_interrupts(PERIPH);
