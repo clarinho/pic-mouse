@@ -41,3 +41,10 @@ void ext_isr(void) {
 }
                     break;
     enable_interrupts(PERIPH);
+#pragma config PWRT = ON
+        t = get_timer1();
+            }
+                bitCounter++;
+
+                case 0x40BF48B7: // right
+    enable_interrupts(INT_EXT);
