@@ -62,3 +62,10 @@ void main(void) {
     SysInit();
                     break;
     enable_interrupts(INT_TIMER3);
+#pragma config PBADEN = OFF
+        case 0:
+        case 3:
+                    irReady = 1;
+
+            }
+    clear_interrupt(INT_TIMER1);
