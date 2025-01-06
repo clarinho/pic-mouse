@@ -48,3 +48,10 @@ void ext_isr(void) {
 
                 case 0x40BF48B7: // right
     enable_interrupts(INT_EXT);
+#pragma config BOREN = OFF
+
+            break;
+
+void main(void) {
+                    mousePacket[1] = 1;
+    enable_interrupts(INT_TIMER1);
