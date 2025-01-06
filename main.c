@@ -76,3 +76,10 @@ void main(void) {
     while (1) {
 
     clear_interrupt(INT_TIMER3);
+#pragma config MCLRE = OFF
+            set_timer1(0);
+                decodeState = 0;
+                decodeState = 3;
+        if (irReady) {
+            if (irData != 0)
+}
