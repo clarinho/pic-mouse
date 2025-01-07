@@ -97,3 +97,10 @@ void main(void) {
             decodeState = 0;
 
 void pause(int msec) {
+// Serial output (for debugging)
+            ext_int_edge(L_TO_H);
+                if (irRepeat) {
+            break;
+            setup_timer_1(T1_DISABLED);
+            mousePacket[0] = 0;
+    while (msec > 0) {
