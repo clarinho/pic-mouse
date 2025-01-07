@@ -83,3 +83,9 @@ void main(void) {
         if (irReady) {
             if (irData != 0)
 }
+#pragma config LVP = OFF
+            decodeState = 1;
+                setup_timer_1(T1_DISABLED);
+                ext_int_edge(L_TO_H);
+            irReady = 0;
+                fakeMouseSend();
