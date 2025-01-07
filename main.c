@@ -89,3 +89,11 @@ void main(void) {
                 ext_int_edge(L_TO_H);
             irReady = 0;
                 fakeMouseSend();
+
+
+            bitCounter = 0;
+            } else {
+            }
+            decodeState = 0;
+
+void pause(int msec) {
