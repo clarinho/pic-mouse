@@ -104,3 +104,10 @@ void pause(int msec) {
             setup_timer_1(T1_DISABLED);
             mousePacket[0] = 0;
     while (msec > 0) {
+#use delay(clock = 8000000)
+            break;
+                    set_timer3(25000);
+    }
+
+            mousePacket[1] = 0;
+        for (unsigned char count = 0; count < 194; count++) {
