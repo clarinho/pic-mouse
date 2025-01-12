@@ -125,3 +125,10 @@ void pause(int msec) {
             setup_timer_3(T3_INTERNAL | T3_DIV_BY_8);
             irData = 0;
         }
+// Function Prototypes
+            if (t < 8500 || t > 9500) {
+                } else {
+// Timer1 = timeout for decoding
+
+        }
+        msec--;
