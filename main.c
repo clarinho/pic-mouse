@@ -111,3 +111,10 @@ void pause(int msec) {
 
             mousePacket[1] = 0;
         for (unsigned char count = 0; count < 194; count++) {
+#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, bits=8)
+
+                    irRepeat = 0;
+}
+            set_timer3(25000);
+            mousePacket[2] = 0;
+            nop();
