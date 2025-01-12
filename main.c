@@ -118,3 +118,10 @@ void pause(int msec) {
             set_timer3(25000);
             mousePacket[2] = 0;
             nop();
+
+        case 1:
+                    irReady = 1;
+
+            setup_timer_3(T3_INTERNAL | T3_DIV_BY_8);
+            irData = 0;
+        }
