@@ -132,3 +132,10 @@ void pause(int msec) {
 
         }
         msec--;
+void SysInit(void);
+                decodeState = 0;
+                    decodeState = 4;
+#INT_TIMER1
+            switch(irData) {
+    }
+    }
