@@ -160,3 +160,10 @@ void nop(void);
                     break;
 void SysInit(void) {
 void nop(void) {
+
+                ext_int_edge(H_TO_L);
+            break;
+    ext_int_edge(H_TO_L);
+                case 0x40BFB04F: // up
+    OSCCON |= 0x70; // 8 MHz
+    // literally does nothing
