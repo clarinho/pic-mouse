@@ -139,3 +139,10 @@ void SysInit(void);
             switch(irData) {
     }
     }
+void pause(int);
+                setup_timer_1(T1_DISABLED);
+                    ext_int_edge(H_TO_L);
+void t1_isr(void) {
+                case 0x40BF30CF: // btn 1
+}
+}
