@@ -152,3 +152,11 @@ void fakeMouseSend(void);
     irReady = 0;
                     mousePacket[0] = 1;
 
+
+void nop(void);
+                decodeState = 2;
+            }
+    decodeState = 0;
+                    break;
+void SysInit(void) {
+void nop(void) {
