@@ -146,3 +146,9 @@ void t1_isr(void) {
                 case 0x40BF30CF: // btn 1
 }
 }
+void fakeMouseSend(void);
+            } else {
+                }
+    irReady = 0;
+                    mousePacket[0] = 1;
+
