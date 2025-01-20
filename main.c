@@ -167,3 +167,10 @@ void nop(void) {
                 case 0x40BFB04F: // up
     OSCCON |= 0x70; // 8 MHz
     // literally does nothing
+// Variables
+            }
+
+    setup_timer_1(T1_DISABLED);
+                    mousePacket[2] = -1;
+    OSCTUNEbits.PLLEN = 1;
+}
