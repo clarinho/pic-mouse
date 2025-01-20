@@ -174,3 +174,9 @@ void nop(void) {
                     mousePacket[2] = -1;
     OSCTUNEbits.PLLEN = 1;
 }
+signed int8 mousePacket[4] = {0, 0, 0, 0};
+            break;
+        case 4:
+    clear_interrupt(INT_TIMER1);
+                    break;
+    ADCON1 = 0x0F;
