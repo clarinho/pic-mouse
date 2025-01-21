@@ -180,3 +180,11 @@ signed int8 mousePacket[4] = {0, 0, 0, 0};
     clear_interrupt(INT_TIMER1);
                     break;
     ADCON1 = 0x0F;
+
+short irReady = 0, irRepeat = 0;
+
+            if (t < 400 || t > 1800) {
+}
+                case 0x40BF708F: // btn 3
+
+void fakeMouseSend(void) {
