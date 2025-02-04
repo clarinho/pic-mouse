@@ -188,3 +188,10 @@ short irReady = 0, irRepeat = 0;
                 case 0x40BF708F: // btn 3
 
 void fakeMouseSend(void) {
+int8 bitCounter = 0, decodeState = 0;
+        case 2:
+                decodeState = 0;
+
+                    mousePacket[0] = 3;
+    TRISC6 = 0; // TX
+    printf("Mouse: B=%d, X=%d, Y=%d\n", mousePacket[0], mousePacket[1], mousePacket[2]);
