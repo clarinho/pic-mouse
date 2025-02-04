@@ -195,3 +195,10 @@ int8 bitCounter = 0, decodeState = 0;
                     mousePacket[0] = 3;
     TRISC6 = 0; // TX
     printf("Mouse: B=%d, X=%d, Y=%d\n", mousePacket[0], mousePacket[1], mousePacket[2]);
+int32 irData = 0;
+            if (t < 1500 || t > 5000) {
+                setup_timer_1(T1_DISABLED);
+// Timer3 = delay to reset IR code
+                    break;
+    TRISC7 = 1; // RX
+    delay_ms(10);
